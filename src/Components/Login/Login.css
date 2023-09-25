@@ -1,0 +1,177 @@
+.LoginMainDiv{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+    align-items: center;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.LoginLogoDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    background-color: black;
+}
+.LoginWelcomeDiv{
+    display: flex;
+    flex-direction: column;
+    row-gap:3vh ;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+.LoginInputsDiv{
+    width: 60%;
+    height: fit-content;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+.LoginInputs{
+    width: 60%;
+    background-color:rgba(0,0,0,0.8);
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+.LoginInputFields{
+    width: 80%;
+    height: 5vh;
+}
+.LoginLoginbtn{
+    background-color: #FF7900;
+    color: black;
+    font-family: Helvetica Neue;
+    width: 80%;
+    height: fit-content;
+    font-size: 1.7rem;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+.LoginLoginbtn:hover{
+    cursor: pointer;
+    background-color: orange;
+    transition: 0.3s;
+
+}
+.LoginforgetPasswordA{
+    font-family: Helvetica Neue;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    
+    
+
+}
+.LoginforgetPasswordA:hover{
+    color:#FF7900;
+    transition: 0.3s;
+}
+.LoginFooterDiv{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom:0.5%;
+    height: fit-content;
+    padding-top: 20px;
+}
+.LoginFooterBadges{
+    background-color:#D9D9D9;
+    display: flex;
+    flex-direction: row;
+    column-gap: 1vw;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 99%;
+    padding: 9px;
+   
+
+
+}
+.LoginpoweredByLabel{
+    font-family: Inter;
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: black;
+   
+
+}
+.LoginBadge{
+    width: 12.3vw;
+    height: fit-content;
+    padding: 12px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.LoginBadgeLabel{
+    font-family: Inter;
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: white;
+
+
+}
+.LoginWelcomeLabel{
+    font-family: Helvetica Neue;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 5.188rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+
+
+}
+@media screen and (max-width:600px){
+
+    .LoginGenerativeAi{
+        font-size: 1.3rem;
+    }
+    .LoginGenerativeAi{
+        width: 60%;
+    }
+    .LoginInputsDiv{
+        width: 90%;
+    }
+    .LoginInputs{
+        width: 90%;
+    }
+    .LoginWelcomeLabel{
+        font-size: 3rem;
+    }
+}
+@media screen and (min-width:601px) and (max-width:900px) {
+    .LoginInputsDiv{
+        width: 90%;
+    }
+    .LoginInputs{
+        width: 90%;
+    }
+    
+}

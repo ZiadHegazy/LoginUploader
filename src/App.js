@@ -1,24 +1,17 @@
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import { Login } from './Components/Login/Login';
+import { ExcelUploader } from './Components/ExcelUploader/ExcelUploader';
+import { PdfUploader } from './Components/PdfUploader/PdfUploader';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path='/' element={<Login/>}></Route>
+      <Route path='/excelUpload' element={<ExcelUploader/>}></Route>
+      <Route path='/pdfUpload' element={<PdfUploader/>}></Route>
+
+    </Routes>
   );
 }
 
