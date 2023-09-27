@@ -1,0 +1,35 @@
+.HomeMainDiv{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+    align-items: center;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.HomeOptionsDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    row-gap: 2vh;
+}
+.UploadBtnChoice{
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    border-radius: 10px;
+    padding: 9px;
+    align-items: center;
+    min-width: 20%;
+}
+.UploadBtnChoice >i{
+    font-size: 1.2rem;
+}
+.UploadBtnChoice:hover{
+    cursor: pointer;
+    color: orange;
+    transition: 0.3s;
+}

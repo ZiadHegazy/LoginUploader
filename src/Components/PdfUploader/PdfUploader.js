@@ -1,7 +1,9 @@
 import { FormControl, InputLabel, MenuItem, Select } from "@mui/material";
 import orangeLogo from "../../Images/Orange_Logo.png"
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 export function PdfUploader(){
+    const navigate=useNavigate()
     const [globalFiles,setGlobalFiles]=useState([])
     const [title,setTitle]=useState("")
     const [domain,setDomain]=useState("Information Security")
@@ -86,7 +88,8 @@ export function PdfUploader(){
             <br></br>
             <br></br>
             <br></br>
-
+            <div><button onClick={()=>navigate("/excelUpload")} className="UploadBtnChoice"> <i className="fas fa-file-excel iconExcel"></i> Excel Upload</button>
+</div>
             <div className="uploaderInputsDiv">
             <input className="uploadTitleInput"  type="text" placeholder="Title" onChange={handleTitleChange} />
             

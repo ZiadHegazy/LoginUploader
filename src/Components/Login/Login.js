@@ -3,7 +3,9 @@ import orangeLogo from "../../Images/Orange_Logo.png"
 import "./Login.css"
 import { login } from "../../API/LoginApi"
 import {  useJwt , isExpired, decodeToken} from "react-jwt";
+import { useNavigate } from "react-router-dom";
 export function Login(){
+    const navigate=useNavigate()
     const [username,setUsername]=useState("")
     const [password,setPassword]=useState("")
     const [showError,setShowError]=useState(false)
@@ -21,6 +23,7 @@ export function Login(){
             const result=await login(username,password)
             localStorage.setItem("access_token",result.access_token)
             localStorage.setItem("refresh_token",result.refresh_token)
+            navigate("/home")
         }catch{
             setShowError(true)
 

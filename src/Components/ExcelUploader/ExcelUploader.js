@@ -1,13 +1,14 @@
 import "./ExcelUploader.css"
 import orangeLogo from "../../Images/Orange_Logo.png"
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 export function ExcelUploader(){
+    const navigate=useNavigate()
     const [globalFiles,setGlobalFiles]=useState([])
     const [title,setTitle]=useState("")
     const [domain,setDomain]=useState("Information Security")
     const handleTitleChange=(event)=>{
         setTitle(event.target.value)
-
     }
     const handleDomainChange=(event)=>{
         
@@ -86,7 +87,9 @@ export function ExcelUploader(){
             <br></br>
             <br></br>
             <br></br>
-
+            <div className="OtherOptionsDiv"> 
+            <button onClick={()=>navigate("/pdfUpload")} className="UploadBtnChoice"> <i className="fas fa-file-pdf iconPdf"></i> PDF Upload</button>
+            </div>
             <div className="uploaderInputsDiv">
             
             <div style={{display:"flex",flexDirection:"row",width:"100%",justifyContent:"center",alignItems:"center",columnGap:"1vw"}}>
