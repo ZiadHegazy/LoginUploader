@@ -8,6 +8,7 @@ export function Login(){
     const navigate=useNavigate()
     const [username,setUsername]=useState("")
     const [password,setPassword]=useState("")
+    const [data, setData] = useState({add:{Q1:[1,2,3],Q2:[],Q3:[]}});
     const [showError,setShowError]=useState(false)
     const handleUsernameChange=(event)=>{
         setUsername(event.target.value)
@@ -28,11 +29,10 @@ export function Login(){
             setShowError(true)
 
         }
-        // const decodedToken = decodeToken(result.access_token);
-        // const isExpiredToken=isExpired(result.access_token)
-        // console.log(decodedToken+" "+isExpiredToken)
+        
         
     }
+    
     return(
         <div className="LoginMainDiv">
             <div className="LoginLogoDiv">

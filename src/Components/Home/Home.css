@@ -15,6 +15,9 @@
     align-items: center;
     width: 60%;
     row-gap: 2vh;
+    background-color: #CCCCCC;
+    border-radius: 10px;
+    padding: 10px;
 }
 .UploadBtnChoice{
     background-color: black;
@@ -30,6 +33,6 @@
 }
 .UploadBtnChoice:hover{
     cursor: pointer;
-    color: orange;
+    color: #FF7900;
     transition: 0.3s;
 }

@@ -67,7 +67,8 @@
 }
 .LoginLoginbtn:hover{
     cursor: pointer;
-    background-color: orange;
+    /* background-color: orange; */
+    color: white;
     transition: 0.3s;
 
 }
@@ -81,7 +82,7 @@
 
 }
 .LoginforgetPasswordA:hover{
-    color:#FF7900;
+    color: #FF7900;
     transition: 0.3s;
 }
 .LoginFooterDiv{

@@ -89,6 +89,8 @@ export function ExcelUploader(){
             <br></br>
             <div className="OtherOptionsDiv"> 
             <button onClick={()=>navigate("/pdfUpload")} className="UploadBtnChoice"> <i className="fas fa-file-pdf iconPdf"></i> PDF Upload</button>
+            <button onClick={()=>navigate("/home")} className="UploadBtnChoice"> <i className="fas fa-undo icons"></i> Home</button>
+     
             </div>
             <div className="uploaderInputsDiv">
             

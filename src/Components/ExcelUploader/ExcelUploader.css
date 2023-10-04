@@ -16,11 +16,11 @@ body {
       cursor: pointer;
       /* background: transparent; */
       font-size: 1rem;
-      color:orange;
+      color:#FF7900;
   }
   
   .drop-area {
-    border: 6px dashed #ccc;
+    border: 6px dashed #d8d9db;
     border-radius: 8px;
     padding: 20px;
     width: 40%;
@@ -58,7 +58,7 @@ body {
   }
   
   #file-upload-container.highlight {
-    border-color: orange;
+    border-color: #FF7900;
   }
   
 .uploaderMainDiv{
@@ -69,13 +69,13 @@ body {
     row-gap: 2vh;
 }  
 .UploadStartBtn{
-    background-color: orange;
+    background-color: #FF7900;
     color: black;
     border-radius: 10px;
     padding: 10px;
 }
 .UploadStartBtn:hover{
-    background-color:  rgb(249, 181, 55);
+    background-color:  #FF7900;
     color: white;
     transition: 0.3s;
     cursor: pointer;
@@ -98,6 +98,13 @@ body {
   width:30%;
   font-size:1rem;
   background-color:white;
+}
+.OtherOptionsDiv{
+  display: flex;
+  flex-direction: row;
+  column-gap: 1vw;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (max-width:600px) {
   .uploaderInputsDiv{

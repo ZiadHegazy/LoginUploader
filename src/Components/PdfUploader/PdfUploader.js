@@ -88,8 +88,11 @@ export function PdfUploader(){
             <br></br>
             <br></br>
             <br></br>
-            <div><button onClick={()=>navigate("/excelUpload")} className="UploadBtnChoice"> <i className="fas fa-file-excel iconExcel"></i> Excel Upload</button>
-</div>
+            <div className="OtherOptionsDiv">
+            <button onClick={()=>navigate("/excelUpload")} className="UploadBtnChoice"> <i className="fas fa-file-excel iconExcel"></i> Excel Upload</button>
+            <button onClick={()=>navigate("/home")} className="UploadBtnChoice"> <i className="fas fa-undo icons"></i> Home</button>
+
+            </div>
             <div className="uploaderInputsDiv">
             <input className="uploadTitleInput"  type="text" placeholder="Title" onChange={handleTitleChange} />
             
